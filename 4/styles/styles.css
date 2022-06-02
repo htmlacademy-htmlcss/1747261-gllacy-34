@@ -1,0 +1,266 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/inter-900.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2D3440;
+  background: #FEAFC3;
+}
+
+a, .button {
+  text-decoration: none;
+  color: #2D3440;
+}
+
+.button {
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  background: #FCFCFC;
+}
+
+.red-button {
+  background: #FF2F64;
+  color: #FCFCFC;
+}
+
+.navigation-link {
+  line-height: 20px;
+  text-align: center;
+}
+
+.navigation-phone {
+  font-weight: 700;
+}
+
+.navigation-user .navigation-link:not(.navigation-phone) {
+  font-size: 14px;
+}
+
+.ice-cream-name {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.ice-cream-description {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.gift-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+}
+
+.gift-item {
+  background: #FF7799;
+}
+
+.gift-name {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.popular-ice-cream-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+}
+
+.product-card {
+  background: #FCFCFC;
+}
+
+.product-card a {
+  text-align: center;
+}
+
+.product-card-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.product-card-description {
+  color: #565C66;
+}
+
+.product-card-price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.product-card-button {
+  background: #FF2F64;
+}
+
+.about {
+  background: #FFFFFF;
+}
+
+.about-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+}
+
+.about-item {
+  color: #565C66;
+}
+
+.news {
+  background: url("../images/decorative/news-background.jpg") left center;
+  background-size: 115% auto;
+}
+
+.news-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #565C66;
+}
+
+.news-link {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.newsletter {
+  background: #FFFFFF;
+}
+
+.newsletter-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #565C66;
+}
+
+.delivery {
+  background: url("../images/decorative/delivery-background.jpg");
+  background-size: cover;
+}
+
+.delivery-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+
+.delivery-description, .delivery-form-description {
+  color: #565C66;
+}
+
+.delivery-form .form-label {
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.delivery-form {
+  background: #FCFCFC;
+}
+
+.contacts {
+  background: url("../images/decorative/contacts-background.jpg") right center;
+  background-size: cover;
+}
+
+.contacts-inner {
+  background: #FCFCFC;
+}
+
+.contacts-subtitle, .contacts-schedule {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #565C66;
+}
+
+.contacts-address, .contacts-phone {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.for-suppliers {
+  font-weight: 700;
+}
+
+.footer-menu-link {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.copyright-text {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.htmlacademy-link {
+  text-decoration: underline;
+}
+
+.navigation-link-current {
+  background: #FF4A78;
+  color: #FCFCFC;
+}
+
+.breadcrumbs-link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.breadcrumbs-item:last-child a {
+  text-decoration: underline;
+}
+
+.inner-header-subtitle {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+
+.control, .catalog-filter-title {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.catalog-filter-button {
+  font-size: 14px;
+}
+
+.pagination-current {
+  background: #FCFCFC;
+}
