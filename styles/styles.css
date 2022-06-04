@@ -28,23 +28,32 @@ body {
   line-height: 22px;
   color: #2D3440;
   background: #FEAFC3;
+  margin: 0;
 }
 
-a, .button {
+.link, 
+.button {
+  font-family: inherit;
   text-decoration: none;
   color: #2D3440;
+  cursor: pointer;
 }
 
 .button {
+  font-size: inherit;
   line-height: 20px;
   font-weight: 700;
   text-align: center;
   background: #FCFCFC;
 }
 
-.red-button {
+.additional-button {
   background: #FF2F64;
   color: #FCFCFC;
+}
+
+.form input {
+  font-family: inherit;
 }
 
 .navigation-link {
@@ -83,7 +92,6 @@ a, .button {
 }
 
 .gift-name {
-  font-weight: 700;
   font-size: 24px;
   line-height: 30px;
 }
@@ -104,7 +112,6 @@ a, .button {
 }
 
 .product-card-title {
-  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
 }
@@ -178,7 +185,8 @@ a, .button {
   line-height: 46px;
 }
 
-.delivery-description, .delivery-form-description {
+.delivery-description, 
+.delivery-form-description {
   color: #565C66;
 }
 
@@ -200,14 +208,16 @@ a, .button {
   background: #FCFCFC;
 }
 
-.contacts-subtitle, .contacts-schedule {
+.contacts-subtitle, 
+.contacts-schedule {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: #565C66;
 }
 
-.contacts-address, .contacts-phone {
+.contacts-address, 
+.contacts-phone {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -252,7 +262,8 @@ a, .button {
   line-height: 46px;
 }
 
-.control, .catalog-filter-title {
+.control, 
+.catalog-filter-title {
   font-size: 14px;
   line-height: 20px;
 }
