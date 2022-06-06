@@ -1,0 +1,467 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/inter-900.woff2") format("woff2");
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2D3440;
+  background: #FEAFC3;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.link, 
+.button {
+  font-family: inherit;
+  text-decoration: none;
+  color: #2D3440;
+  cursor: pointer;
+}
+
+.button {
+  font-size: inherit;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  background: #FCFCFC;
+}
+
+.additional-button {
+  background: #FF2F64;
+  color: #FCFCFC;
+}
+
+.form input {
+  font-family: inherit;
+}
+
+.page-container {
+  margin: 0 auto;
+  width: 1170px;
+}
+
+.page-header {
+  display: flex;
+}
+
+.header-logo {
+  margin-right: 16px;
+}
+
+.navigation {
+  display: flex;
+  width: 1017px;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 500px;
+  list-style: none;
+}
+
+.navigation-user {
+  width: 450px;
+  margin-left: auto;
+}
+
+.navigation-link {
+  line-height: 20px;
+  text-align: center;
+}
+
+.navigation-phone {
+  font-weight: 700;
+}
+
+.navigation-user .navigation-link:not(.navigation-phone) {
+  font-size: 14px;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.ice-cream-name {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.ice-cream-description {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.gift-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.gift-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+}
+
+.gift-item {
+  background: #FF7799;
+  width: 570px;
+  list-style: none;
+  box-sizing: border-box;
+  padding: 0 206px 0 36px;
+}
+
+.gift-name {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.popular-ice-cream-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+
+.popular-ice-cream-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.product-card {
+  background: #FCFCFC;
+  width: 190px;
+  padding: 0px 40px 24px 40px;
+  list-style: none;
+  margin-top: 51px;
+}
+
+.product-card-image {
+  display: block;
+  margin: 0 auto;
+  margin-top: -51px;
+  border-radius: 50%;
+}
+
+.product-card a {
+  text-align: center;
+}
+
+.product-card-title {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.product-card-description {
+  color: #565C66;
+  font-size: 16px;
+}
+
+.product-card-price {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.product-card-button {
+  background: #FF2F64;
+}
+
+.about {
+  background: #FFFFFF;
+  width: 1042px;
+  padding: 80px 64px;
+  margin-bottom: 80px;
+}
+
+.about-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+  margin: 0 auto 56px auto;
+}
+
+.about-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about-item {
+  box-sizing: border-box;
+  color: #565C66;
+  list-style: none;
+  padding-left: 64px;
+  width: 506px;
+}
+
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.news {
+  background: url("../images/decorative/news-background.jpg") left center;
+  background-size: 115% auto;
+  width: 303px;
+  padding: 0 235px 0 32px ;
+
+}
+
+.news-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #565C66;
+}
+
+.news-link {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.newsletter {
+  background: #FFFFFF;
+  width: 506px;
+  padding: 0 32px;
+}
+
+.newsletter-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #565C66;
+}
+
+.delivery {
+  background: url("../images/decorative/delivery-background.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 64px 0 100px;
+  
+}
+
+.delivery-text-column {
+  width: 371px;
+}
+
+.delivery-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+
+.delivery-description, 
+.delivery-form-description {
+  color: #565C66;
+}
+
+.delivery-form .form-label {
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.delivery-form {
+  background: #FCFCFC;
+  width: 420px;
+  padding: 0 40px;
+}
+
+.contacts {
+  background: url("../images/decorative/contacts-background.jpg") right center;
+  background-size: cover;
+}
+
+.contacts-inner {
+  background: #FCFCFC;
+  width: 263px;
+  padding:  0 40px;
+  margin-left: 64px;
+}
+
+.contacts-subtitle, 
+.contacts-schedule {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #565C66;
+}
+
+.contacts-address, 
+.contacts-phone {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-footer .social-list {
+  width: 120px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 455px;
+}
+
+.footer-menu-item {
+  margin: 0 auto;
+}
+
+.footer-menu-link {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.for-suppliers {
+  font-weight: 700;
+}
+
+.copyright {
+  width: 193px;
+  margin-right: 14px;
+}
+
+.copyright-text {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.htmlacademy-link {
+  text-decoration: underline;
+}
+
+/* --catalog-- */
+
+.catalog-header {
+  display: flex;
+}
+
+.navigation-link-current {
+  background: #FF4A78;
+  color: #FCFCFC;
+}
+
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.breadcrumbs-link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  padding-right: 28px;
+}
+
+.breadcrumbs-item:last-child a {
+  text-decoration: underline;
+}
+
+.inner-header-subtitle {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+
+.catalog-filter {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.control, 
+.catalog-filter-title {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.catalog-filter-button {
+  font-size: 14px;
+  background:rgba(252, 252, 252, 0.3);
+  padding: 8px 52px;
+  margin: auto 0;
+}
+
+.ice-cream-list {
+  margin: 0;
+  margin-bottom: 29px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.ice-cream-list .product-card {
+  margin-bottom: 40px;
+}
+
+.catalog-pagination {
+  display: flex;
+}
+
+.button-show-more {
+  padding: 12px 32px;
+  margin: auto 0 auto 488px;
+}
+
+.pagination-list {
+  margin-left: auto;
+}
+
+.pagination-current {
+  background: #FCFCFC;
+}
