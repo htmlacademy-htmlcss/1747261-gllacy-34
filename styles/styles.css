@@ -38,7 +38,7 @@ body {
   min-height: 100%;
 }
 
-.link, 
+.link,
 .button {
   font-family: inherit;
   text-decoration: none;
@@ -280,7 +280,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0 64px 0 100px;
-  
+
 }
 
 .delivery-text-column {
@@ -293,7 +293,7 @@ body {
   line-height: 46px;
 }
 
-.delivery-description, 
+.delivery-description,
 .delivery-form-description {
   color: #565C66;
 }
@@ -321,7 +321,7 @@ body {
   margin-left: 64px;
 }
 
-.contacts-subtitle, 
+.contacts-subtitle,
 .contacts-schedule {
   font-weight: 400;
   font-size: 16px;
@@ -329,7 +329,7 @@ body {
   color: #565C66;
 }
 
-.contacts-address, 
+.contacts-address,
 .contacts-phone {
   font-weight: 700;
   font-size: 20px;
@@ -423,7 +423,7 @@ body {
   margin-bottom: 32px;
 }
 
-.control, 
+.control,
 .catalog-filter-title {
   font-size: 14px;
   line-height: 20px;
