@@ -38,6 +38,17 @@ body {
   min-height: 100%;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .link,
 .button {
   font-family: inherit;
@@ -52,11 +63,16 @@ body {
   font-weight: 700;
   text-align: center;
   background: #FCFCFC;
+  padding: 12px 32px;
 }
 
 .additional-button {
   background: #FF2F64;
   color: #FCFCFC;
+}
+
+.button-user {
+  background:rgba(252, 252, 252, 0.3);
 }
 
 .form input {
@@ -65,6 +81,7 @@ body {
 
 .page-container {
   margin: 0 auto;
+  padding: 24px 0;
   width: 1170px;
 }
 
@@ -74,40 +91,64 @@ body {
 
 .header-logo {
   margin-right: 16px;
+  align-self: center;
 }
 
 .navigation {
   display: flex;
   width: 1017px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navigation-list {
   margin: 0;
   padding: 0;
-  width: 500px;
-  list-style: none;
+  max-width: 535px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .navigation-user {
-  width: 450px;
-  margin-left: auto;
+  max-width: 450px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 
 .navigation-link {
   line-height: 20px;
   text-align: center;
+  display: inline-block;
+  padding: 8px 16px;
 }
 
 .navigation-phone {
   font-weight: 700;
+  padding: 0;
 }
 
 .navigation-user .navigation-link:not(.navigation-phone) {
   font-size: 14px;
+  box-sizing: border-box;
+  min-width: 32px;
+  min-height: 32px;
+  display:flex;
+  align-items: center;
+}
+
+.navigation-user li:not(:last-child) .navigation-link  {
+  margin-right: 16px;
 }
 
 .main-container {
   flex-grow: 1;
+  padding-top: 24px;
+}
+
+.ice-cream-slider {
+  margin-bottom: 80px;
 }
 
 .ice-cream-name {
@@ -126,6 +167,7 @@ body {
   padding: 0;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 81px;
 }
 
 .gift-title {
@@ -133,19 +175,32 @@ body {
   font-size: 32px;
   line-height: 46px;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 55px;
 }
 
 .gift-item {
   background: #FF7799;
   width: 570px;
-  list-style: none;
+  list-style-type: none;
   box-sizing: border-box;
-  padding: 0 206px 0 36px;
+  padding: 36px 206px 36px 36px;
 }
 
 .gift-name {
   font-size: 24px;
   line-height: 30px;
+  margin-top: 0;
+  margin-bottom: 28px;
+}
+
+.gift-description {
+  margin-top: 0;
+  margin-bottom: 28px;
+}
+
+.gift-button {
+  display: inline-block;
 }
 
 .popular-ice-cream-list {
@@ -162,14 +217,15 @@ body {
   font-size: 32px;
   line-height: 46px;
   text-align: center;
+  margin-top: 0;
   margin-bottom: 56px;
 }
 
 .product-card {
   background: #FCFCFC;
   width: 190px;
-  padding: 0px 40px 24px 40px;
-  list-style: none;
+  padding: 0 40px 24px 40px;
+  list-style-type: none;
   margin-top: 51px;
 }
 
@@ -201,13 +257,18 @@ body {
 
 .product-card-button {
   background: #FF2F64;
+  width: 32px;
+  height: 32px;
+  display: block;
 }
 
 .about {
   background: #FFFFFF;
-  width: 1042px;
-  padding: 80px 64px;
-  margin-bottom: 80px;
+  max-width: 1042px;
+  padding: 56px 40px;
+  padding-bottom: 16px;
+  margin: 80px auto;
+  margin-top: 0;
 }
 
 .about-title {
@@ -229,9 +290,10 @@ body {
 .about-item {
   box-sizing: border-box;
   color: #565C66;
-  list-style: none;
+  list-style-type: none;
   padding-left: 64px;
   width: 506px;
+  margin-bottom: 40px;
 }
 
 .index-columns {
@@ -240,12 +302,12 @@ body {
   margin-bottom: 80px;
 }
 
-.news {
-  background: url("../images/decorative/news-background.jpg") left center;
+.news-banner {
+  background: url("../images/decorative/news-background.jpg") left center no-repeat;
   background-size: 115% auto;
   width: 303px;
-  padding: 0 235px 0 32px ;
-
+  min-height: 158px;
+  padding: 33px 235px 33px 32px ;
 }
 
 .news-title {
@@ -253,18 +315,21 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #565C66;
+  margin-top: 0;
+  margin-bottom: 13px;
 }
 
 .news-link {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+  display: inline-block;
 }
 
 .newsletter {
   background: #FFFFFF;
   width: 506px;
-  padding: 0 32px;
+  padding: 32px;
 }
 
 .newsletter-title {
@@ -272,6 +337,9 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: #565C66;
+  margin-top: 0;
+  margin-bottom: 26px;
+  min-height: 82px;
 }
 
 .delivery {
@@ -279,11 +347,13 @@ body {
   background-size: cover;
   display: flex;
   justify-content: space-between;
-  padding: 0 64px 0 100px;
-
+  padding: 64px;
+  padding-left: 100px;
+  margin-bottom: 80px;
 }
 
 .delivery-text-column {
+  padding-top: 103px;
   width: 371px;
 }
 
@@ -291,11 +361,14 @@ body {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
+  margin: 0;
+  margin-bottom: 24px;
 }
 
 .delivery-description,
 .delivery-form-description {
   color: #565C66;
+  margin: 0;
 }
 
 .delivery-form .form-label {
@@ -306,19 +379,27 @@ body {
 .delivery-form {
   background: #FCFCFC;
   width: 420px;
-  padding: 0 40px;
+  min-height: 326px;
+  padding: 40px;
 }
 
 .contacts {
   background: url("../images/decorative/contacts-background.jpg") right center;
   background-size: cover;
+  margin-bottom: 44px;
+  padding: 64px;
 }
 
 .contacts-inner {
   background: #FCFCFC;
   width: 263px;
-  padding:  0 40px;
-  margin-left: 64px;
+  min-height: 284px;
+  padding: 40px;
+  padding-right: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .contacts-subtitle,
@@ -327,6 +408,11 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: #565C66;
+  margin: 0;
+}
+
+.contacts-subtitle {
+  margin-bottom: 12px;
 }
 
 .contacts-address,
@@ -336,20 +422,44 @@ body {
   line-height: 24px;
 }
 
+.contacts-address {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.feedback-button {
+  margin-top: 32px;
+  margin-bottom: 0;
+  align-self: flex-start;
+}
+
 .page-footer {
   display: flex;
   justify-content: space-between;
 }
 
-.page-footer .social-list {
-  width: 120px;
-  list-style: none;
+ .social-list {
+  list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social-item a {
+  display: inline-block;
+  padding: 0;
+  margin-right: 16px;
+  min-width: 24px;
+  min-height: 24px;
+}
+
+.social-item:last-child a {
+  margin-right: 0;
 }
 
 .footer-menu-list {
-  list-style: none;
+  list-style-type: none;
   padding: 0;
   margin: 0;
   width: 455px;
@@ -376,6 +486,12 @@ body {
 .copyright-text {
   font-size: 12px;
   line-height: 16px;
+  margin: 0;
+}
+
+.htmlacademy-logo {
+  display: block;
+  margin-bottom: 14px;
 }
 
 .htmlacademy-link {
@@ -388,15 +504,25 @@ body {
   display: flex;
 }
 
+.logo-link {
+  line-height: 0;
+}
+
 .navigation-link-current {
   background: #FF4A78;
   color: #FCFCFC;
+  border-radius: 30px;
+}
+
+.main-inner {
+  padding-top: 56px;
 }
 
 .breadcrumbs {
   margin: 0;
+  margin-bottom: 16px;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
   display: flex;
 }
 
@@ -415,12 +541,22 @@ body {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .catalog-filter {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 32px;
+  margin-bottom: 44px;
+}
+
+.filter-item {
+  margin-right: 24px;
+}
+
+.filter-item:last-of-type {
+  margin-right: 18px;
 }
 
 .control,
@@ -429,9 +565,13 @@ body {
   line-height: 20px;
 }
 
+.filter-sort {
+  display: flex;
+  flex-direction: column;
+}
+
 .catalog-filter-button {
   font-size: 14px;
-  background:rgba(252, 252, 252, 0.3);
   padding: 8px 52px;
   margin: auto 0;
 }
@@ -451,17 +591,41 @@ body {
 
 .catalog-pagination {
   display: flex;
+  margin-bottom: 129px;
 }
 
 .button-show-more {
   padding: 12px 32px;
-  margin: auto 0 auto 488px;
+  margin: 0;
+  margin-left: 43%;
 }
 
 .pagination-list {
+  padding: 0;
   margin-left: auto;
+  display: flex;
+  list-style-type: none;
+}
+
+.pagination-item:first-child {
+  margin-right: 8px;
+}
+
+.pagination-item:last-child {
+  margin-left: 8px;
+}
+
+.pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 24px;
+  height: 24px;
+  line-height: 20px;
+  text-align: center;
+  padding: 2px 7px;
 }
 
 .pagination-current {
   background: #FCFCFC;
+  border-radius: 50%;
 }
