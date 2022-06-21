@@ -85,41 +85,43 @@
             </button>
           </div>
 
-          <ol class="slider-pagination">
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                <span class="visually-hidden">1 фото.</span>
-              </button>
-            </li>
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button" type="button">
-                <span class="visually-hidden">2 фото.</span>
-              </button>
-            </li>
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button" type="button">
-                <span class="visually-hidden">3 фото.</span>
-              </button>
-            </li>
-          </ol>
+          <div class="slider-footer">
+            <ol class="slider-pagination">
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                  <span class="visually-hidden">1 фото.</span>
+                </button>
+              </li>
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button" type="button">
+                  <span class="visually-hidden">2 фото.</span>
+                </button>
+              </li>
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button" type="button">
+                  <span class="visually-hidden">3 фото.</span>
+                </button>
+              </li>
+            </ol>
 
-          <ul class="social-list">
-            <li class="social-item">
-              <a class="button" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Телеграмм.</span>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="button" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">ВКонтакте.</span>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">Ютуб.</span>
-              </a>
-            </li>
-          </ul>
+            <ul class="social-list">
+              <li class="social-item">
+                <a class="button" href="https://t.me/htmlacademy">
+                  <span class="visually-hidden">Телеграмм.</span>
+                </a>
+              </li>
+              <li class="social-item">
+                <a class="button" href="https://vk.com/htmlacademy">
+                  <span class="visually-hidden">ВКонтакте.</span>
+                </a>
+              </li>
+              <li class="social-item">
+                <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+                  <span class="visually-hidden">Ютуб.</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </section>
         <section class="gifts">
           <h2 class="gift-title">Заказывайте мороженое и получайте подарки!</h2>
@@ -149,10 +151,12 @@
                 <h3 class="product-card-title">Малинка</h3>
                 <p class="product-card-description">Сливочное мороженое с малиновым джемом</p>
               </a>
-              <b class="product-card-price">310 ₽/кг</b>
-              <a class="product-card-button link" href="#">
-                <span class="visually-hidden">Добавить в корзину.</span>
-              </a>
+              <div class="product-card-footer">
+                <b class="product-card-price">310 ₽/кг</b>
+                <a class="product-card-button link" href="#">
+                  <span class="visually-hidden">Добавить в корзину.</span>
+                </a>
+              </div>
             </li>
 
             <li class="product-card">
@@ -162,10 +166,12 @@
                 <h3 class="product-card-title">Фисташка</h3>
                 <p class="product-card-description">Фисташковый пломбир с кусочками шоколада</p>
               </a>
-              <b class="product-card-price">340 ₽/кг</b>
-              <a class="product-card-button link" href="#">
-                <span class="visually-hidden">Добавить в корзину.</span>
-              </a>
+              <div class="product-card-footer">
+                <b class="product-card-price">340 ₽/кг</b>
+                <a class="product-card-button link" href="#">
+                  <span class="visually-hidden">Добавить в корзину.</span>
+                </a>
+              </div>
             </li>
 
             <li class="product-card">
@@ -175,10 +181,12 @@
                 <h3 class="product-card-title">Черника</h3>
                 <p class="product-card-description">Крем-брюле с черничным джемом</p>
               </a>
-              <b class="product-card-price">330 ₽/кг</b>
-              <a class="product-card-button link" href="#">
-                <span class="visually-hidden">Добавить в корзину.</span>
-              </a>
+              <div class="product-card-footer">
+                <b class="product-card-price">330 ₽/кг</b>
+                <a class="product-card-button link" href="#">
+                  <span class="visually-hidden">Добавить в корзину.</span>
+                </a>
+              </div>
             </li>
 
             <li class="product-card">
@@ -188,10 +196,12 @@
                 <h3 class="product-card-title">Бабл-гам</h3>
                 <p class="product-card-description">Ванильный пломбир со сладкой посыпкой</p>
               </a>
-              <b class="product-card-price">320 ₽/кг</b>
-              <a class="product-card-button link" href="#">
-                <span class="visually-hidden">Добавить в корзину.</span>
-              </a>
+              <div class="product-card-footer">
+                <b class="product-card-price">320 ₽/кг</b>
+                <a class="product-card-button link" href="#">
+                  <span class="visually-hidden">Добавить в корзину.</span>
+                </a>
+              </div>
             </li>
           </ul>
         </section>
@@ -254,7 +264,7 @@
               <input type="text" id="delivery-address" name="delivery-address"
                 placeholder="ул. Большая Конюшенная, 19/8" required>
             </p>
-            <button class="additional-button button" type="submit">Отправить</button>
+            <button class="delivery-form-button additional-button button" type="submit">Отправить</button>
           </form>
         </section>
 
@@ -296,10 +306,10 @@
             <a class="footer-menu-link for-suppliers link" href="#">Для поставщиков</a>
           </li>
           <li class="footer-menu-item">
-            <a class="footer-menu-link link" href="#">О производстве</a>
-          </li>
-          <li class="footer-menu-item">
             <a class="footer-menu-link link" href="#">Наши документы</a>
+          </li>
+           <li class="footer-menu-item">
+            <a class="footer-menu-link link" href="#">О производстве</a>
           </li>
           <li class="footer-menu-item">
             <a class="footer-menu-link link" href="#">Экологические стандарты</a>
