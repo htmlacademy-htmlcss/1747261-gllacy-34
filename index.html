@@ -26,11 +26,11 @@
 
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
-              <a class="navigation-link link navigation-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+              <a class="navigation-link navigation-link-phone link " href="tel:+78005558628">+7 800 555-86-28</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link link navigation-link-search button-user" href="#">
-                <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M2.66341 7.33008C2.66341 4.75275 4.75275 2.66341 7.33008 2.66341C9.90741 2.66341 11.9967 4.75275 11.9967 7.33008C11.9967 8.58735 11.4995 9.7285 10.691 10.5676C10.6682 10.5852 10.6462 10.6044 10.6253 10.6253C10.6044 10.6463 10.5852 10.6682 10.5676 10.6911C9.72847 11.4996 8.58734 11.9967 7.33008 11.9967C4.75275 11.9967 2.66341 9.90741 2.66341 7.33008ZM11.0752 12.018C10.0487 12.8391 8.74675 13.3301 7.33008 13.3301C4.01637 13.3301 1.33008 10.6438 1.33008 7.33008C1.33008 4.01637 4.01637 1.33008 7.33008 1.33008C10.6438 1.33008 13.3301 4.01637 13.3301 7.33008C13.3301 8.74676 12.8391 10.0488 12.018 11.0752L14.4681 13.5253C14.7285 13.7857 14.7285 14.2078 14.4681 14.4682C14.2078 14.7285 13.7857 14.7285 13.5253 14.4682L11.0752 12.018Z"/>
                 </svg>
                 <span class="visually-hidden">Поиск.</span>
@@ -38,7 +38,7 @@
             </li>
             <li class="navigation-item">
               <a class="navigation-link navigation-link-login link button-user" href="#">
-                <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M9 1.67c0-.37.3-.67.67-.67h2.66a2 2 0 0 1 2 2v9.33a2 2 0 0 1-2 2H9.67a.67.67 0 1 1 0-1.33h2.66a.67.67 0 0 0 .67-.67V3a.67.67 0 0 0-.67-.67H9.67A.67.67 0 0 1 9 1.67Zm-3.14 2.2a.67.67 0 0 1 .94 0l3.33 3.32a.69.69 0 0 1 .13.18.66.66 0 0 1-.13.77L6.8 11.47a.67.67 0 1 1-.94-.94l2.2-2.2h-6.4a.67.67 0 1 1 0-1.33h6.4l-2.2-2.2a.67.67 0 0 1 0-.94Z"/>
                 </svg>
                 Вход
@@ -46,12 +46,35 @@
             </li>
             <li class="navigation-item">
               <a class="navigation-link navigation-link-cart link button-user" href="#">
-                <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M1.1667 1.25a.6667.6667 0 0 0 0 1.3333h1.7712l.4675 2.3354a.664.664 0 0 0 .0106.0531l.9674 4.8333.0001.0006a1.8254 1.8254 0 0 0 1.8183 1.4691h5.6207a1.8256 1.8256 0 0 0 1.8185-1.4697l.001-.005.9271-4.8614a.6669.6669 0 0 0-.6549-.7915H4.6107l-.4726-2.3614a.6667.6667 0 0 0-.6537-.5358H1.1667ZM5.691 9.5444l-.8134-4.0639h8.2308l-.7756 4.0669a.4923.4923 0 0 1-.4918.3942v-.0001H6.1962v-.0001l-.0128.0002a.4922.4922 0 0 1-.4922-.3962l-.0002-.001Zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Z"/>
                 </svg>
                 <span class="visually-hidden">Корзина.</span>
                 2 товара
               </a>
+              <div class="popover popover-cart">
+                <button class="popover-close-button button-user">
+                  <svg class="popover-cart-icon" aria-hidden="true" focusable="false" width="16" height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.1667 1.25a.6667.6667 0 0 0 0 1.3333h1.7712l.4675 2.3354a.664.664 0 0 0 .0106.0531l.9674 4.8333.0001.0006a1.8254 1.8254 0 0 0 1.8183 1.4691h5.6207a1.8256 1.8256 0 0 0 1.8185-1.4697l.001-.005.9271-4.8614a.6669.6669 0 0 0-.6549-.7915H4.6107l-.4726-2.3614a.6667.6667 0 0 0-.6537-.5358H1.1667ZM5.691 9.5444l-.8134-4.0639h8.2308l-.7756 4.0669a.4923.4923 0 0 1-.4918.3942v-.0001H6.1962v-.0001l-.0128.0002a.4922.4922 0 0 1-.4922-.3962l-.0002-.001Zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Z"/>
+                  </svg>
+                  2 товара
+                  <span class="visually-hidden">Закрыть</span>
+                </button>
+                <div class="popover-content">
+                  <h2 class="popover-title">Корзина</h2>
+                  <ul class="cart-items-list">
+                    <li class="cart-item">
+                      <img class="cart-item-image" src="images/content/catalog/raspberry.jpg" width="46" height="46" alt="Фото шарика мороженого с малиновым джемом.">
+                      <p class="cart-item-title">Малинка</p>
+                      <p class="cart-item-calc">1 кг х 310 ₽</p>
+                      <p class="cart-item-price">310 ₽</p>
+                      <button type="button" class="cart-item-delete-button">
+                        <span class="visually-hidden">Удалить из корзины</span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </li>
           </ul>
         </nav>
@@ -68,8 +91,26 @@
                 джемом – это идеальный десерт для всей семьи.</p>
               <a class="order-button button" href="#">Заказать</a>
             </div>
-            <img class="slider-image" src="images/content/slaider/sundae-with-strawberry-jam.png" width="306"
-              height="507" alt="Пломбир с клубничным джемом.">
+            <div class="slider-wrapper">
+              <img class="slider-image" src="images/content/slaider/sundae-with-strawberry-jam.png" width="306"
+              height="507" alt="Фото пломбира с клубничным джемом.">
+              <div class="slider-button-container">
+                <button class="slider-button slider-prev" type="button">
+                  <span class="visually-hidden">Предыдущее фото.</span>
+                  <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.8033 3.80515C10.063 3.54545 10.063 3.12439 9.8033 2.8647C9.54361 2.605 9.12255 2.605 8.86285 2.8647L4.19477 7.53277C3.93593 7.79162 3.93508 8.21075 4.19221 8.47065C4.19338 8.47183 4.19454 8.47301 4.19572 8.47418L8.8638 13.1423C9.12349 13.402 9.54455 13.402 9.80425 13.1423C10.0639 12.8826 10.0639 12.4615 9.80425 12.2018L5.60545 8.00301L9.8033 3.80515Z"/>
+                  </svg>
+                </button>
+                <button class="slider-button slider-next" type="button">
+                  <span class="visually-hidden">Следующее фото.</span>
+                  <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.13526 2.8647C6.87557 2.605 6.45451 2.605 6.19481 2.8647C5.93511 3.12439 5.93511 3.54545 6.19481 3.80515L10.3961 8.00643L6.19477 12.2077C5.93508 12.4674 5.93508 12.8885 6.19477 13.1482C6.45447 13.4079 6.87553 13.4079 7.13523 13.1482L11.804 8.47944C11.8049 8.47852 11.8058 8.47759 11.8068 8.47666C12.0665 8.21696 12.0665 7.79591 11.8068 7.53621L7.13526 2.8647Z"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <button class="slide-banana slide-preview"></button>
+            <button class="slide-caramel slide-preview"></button>
           </div>
           <div class="ice-cream-slider-item visually-hidden">
             <div class="ice-cream-slider-text">
@@ -78,8 +119,26 @@
                 наслаждение даже в самый жаркий летний день.</p>
               <a class="order-button button" href="#">Заказать</a>
             </div>
-            <img class="slider-image" src="images/content/slaider/banana-sundae.png" width="306" height="507"
-              alt="Пломбир с клубничным джемом.">
+            <div class="slider-wrapper">
+              <img class="slider-image slider-banana" src="images/content/slaider/banana-sundae.png" width="306" height="507"
+              alt="Фото сливочного мороженого со вкусом банана.">
+              <div class="slider-button-container">
+                <button class="slider-button slider-prev" type="button">
+                  <span class="visually-hidden">Предыдущее фото.</span>
+                  <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.8033 3.80515C10.063 3.54545 10.063 3.12439 9.8033 2.8647C9.54361 2.605 9.12255 2.605 8.86285 2.8647L4.19477 7.53277C3.93593 7.79162 3.93508 8.21075 4.19221 8.47065C4.19338 8.47183 4.19454 8.47301 4.19572 8.47418L8.8638 13.1423C9.12349 13.402 9.54455 13.402 9.80425 13.1423C10.0639 12.8826 10.0639 12.4615 9.80425 12.2018L5.60545 8.00301L9.8033 3.80515Z"/>
+                  </svg>
+                </button>
+                <button class="slider-button slider-next" type="button">
+                  <span class="visually-hidden">Следующее фото.</span>
+                  <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.13526 2.8647C6.87557 2.605 6.45451 2.605 6.19481 2.8647C5.93511 3.12439 5.93511 3.54545 6.19481 3.80515L10.3961 8.00643L6.19477 12.2077C5.93508 12.4674 5.93508 12.8885 6.19477 13.1482C6.45447 13.4079 6.87553 13.4079 7.13523 13.1482L11.804 8.47944C11.8049 8.47852 11.8058 8.47759 11.8068 8.47666C12.0665 8.21696 12.0665 7.79591 11.8068 7.53621L7.13526 2.8647Z"/>
+                  </svg>
+                </button>
+              </div>
+              <button class="slide-caramel slide-preview"></button>
+              <button class="slide-strawberry slide-preview"></button>
+            </div>
           </div>
           <div class="ice-cream-slider-item visually-hidden">
             <div class="ice-cream-slider-text">
@@ -88,17 +147,26 @@
                 завоюет сердца сладкоежек всех возрастов.</p>
               <a class="order-button button" href="#">Заказать</a>
             </div>
-            <img class="slider-image" src="images/content/slaider/caramel-sundae-with-marshmallows.png" width="306"
-              height="507" alt="Пломбир с клубничным джемом.">
-          </div>
-
-          <div class="slider-button-container">
-            <button class="slider-button slider-prev" type="button">
-              <span class="visually-hidden">Предыдущее фото.</span>
-            </button>
-            <button class="slider-button slider-next" type="button">
-              <span class="visually-hidden">Следующее фото.</span>
-            </button>
+            <div class="slider-wrapper">
+              <img class="slider-image" src="images/content/slaider/caramel-sundae-with-marshmallows.png" width="306"
+                height="507" alt="Фото карамельного пломбира с маршмеллоу.">
+              <div class="slider-button-container">
+                <button class="slider-button slider-prev" type="button">
+                  <span class="visually-hidden">Предыдущее фото.</span>
+                  <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.8033 3.80515C10.063 3.54545 10.063 3.12439 9.8033 2.8647C9.54361 2.605 9.12255 2.605 8.86285 2.8647L4.19477 7.53277C3.93593 7.79162 3.93508 8.21075 4.19221 8.47065C4.19338 8.47183 4.19454 8.47301 4.19572 8.47418L8.8638 13.1423C9.12349 13.402 9.54455 13.402 9.80425 13.1423C10.0639 12.8826 10.0639 12.4615 9.80425 12.2018L5.60545 8.00301L9.8033 3.80515Z"/>
+                  </svg>
+                </button>
+                <button class="slider-button slider-next" type="button">
+                  <span class="visually-hidden">Следующее фото.</span>
+                  <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.13526 2.8647C6.87557 2.605 6.45451 2.605 6.19481 2.8647C5.93511 3.12439 5.93511 3.54545 6.19481 3.80515L10.3961 8.00643L6.19477 12.2077C5.93508 12.4674 5.93508 12.8885 6.19477 13.1482C6.45447 13.4079 6.87553 13.4079 7.13523 13.1482L11.804 8.47944C11.8049 8.47852 11.8058 8.47759 11.8068 8.47666C12.0665 8.21696 12.0665 7.79591 11.8068 7.53621L7.13526 2.8647Z"/>
+                  </svg>
+                </button>
+              </div>
+              <button class="slide-strawberry slide-preview"></button>
+              <button class="slide-banana slide-preview"></button>
+            </div>
           </div>
 
           <div class="slider-footer">
@@ -123,7 +191,7 @@
             <ul class="social-list">
               <li class="social-item">
                 <a class="social-link-telegram" href="https://t.me/htmlacademy">
-                  <svg width="24" height="24" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <svg width="24" height="24" aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.29 5.9c-.78.33-2.34 1-4.67 2.02-.38.15-.58.3-.6.44-.02.24.28.34.7.47l.17.05c.4.14.96.3 1.24.3.26 0 .55-.1.87-.32a82.12 82.12 0 0 1 3.38-2.23c.05-.01.12-.03.16.01.05.04.04.12.04.14a22.62 22.62 0 0 1-2.2 2.16l-.2.18c-.37.37-.66.64.02 1.1.33.2.6.38.85.56a59.64 59.64 0 0 0 1.2.82c.34.23.64.45 1 .41.22-.02.44-.22.55-.82.27-1.41.79-4.48.9-5.75.02-.1.01-.21 0-.31a.34.34 0 0 0-.12-.22.52.52 0 0 0-.3-.1c-.31.01-.77.17-3 1.1Z"/>
                   </svg>
                   <span class="visually-hidden">Телеграмм.</span>
@@ -131,7 +199,7 @@
               </li>
               <li class="social-item">
                 <a class="social-link-vk" href="https://vk.com/htmlacademy">
-                  <svg width="24" height="24" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <svg width="24" height="24" aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.4 9.98H7.9s-1.05.06-1.98-.79c-1.01-.92-1.9-2.76-1.9-2.76s-.06-.12 0-.18.23-.07.23-.07H5.4s.11.01.19.06c.06.04.1.12.1.12s.18.4.43.78c.47.72.7.88.86.8.24-.11.16-1.02.16-1.02s0-.33-.11-.48c-.1-.11-.28-.14-.36-.15-.06-.01.04-.14.18-.2.2-.09.57-.1 1-.09.33 0 .43.02.56.05.3.06.3.27.27.71a9.7 9.7 0 0 0-.01.6c-.01.22-.02.48.15.58.09.05.3 0 .84-.8.25-.37.44-.81.44-.81s.04-.08.11-.12c.07-.03.15-.02.15-.02h1.2s.37-.04.43.1c.06.15-.14.5-.63 1.07-.46.54-.69.75-.67.92.01.13.16.25.44.48a3.4 3.4 0 0 1 .8.8c.26.4-.3.42-.3.42l-1.06.02s-.23.04-.54-.15c-.15-.1-.3-.25-.45-.4-.23-.22-.44-.43-.62-.38-.3.08-.28.65-.28.65s0 .12-.07.18c-.07.07-.22.08-.22.08Z"/>
                   </svg>
                   <span class="visually-hidden">ВКонтакте.</span>
@@ -139,7 +207,7 @@
               </li>
               <li class="social-item">
                 <a class="social-link-youtube" href="https://www.youtube.com/user/htmlacademyru">
-                  <svg width="24" height="24" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <svg width="24" height="24" aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path d="M9.33583 7.86083L7.46417 6.9875C7.30083 6.91167 7.16667 6.99667 7.16667 7.1775V8.8225C7.16667 9.00333 7.30083 9.08833 7.46417 9.0125L9.335 8.13917C9.49917 8.0625 9.49917 7.9375 9.33583 7.86083ZM8 0C3.58167 0 0 3.58167 0 8C0 12.4183 3.58167 16 8 16C12.4183 16 16 12.4183 16 8C16 3.58167 12.4183 0 8 0ZM8 11.25C3.905 11.25 3.83333 10.8808 3.83333 8C3.83333 5.11917 3.905 4.75 8 4.75C12.095 4.75 12.1667 5.11917 12.1667 8C12.1667 10.8808 12.095 11.25 8 11.25Z"/>
                   </svg>
                   <span class="visually-hidden">Ютуб.</span>
@@ -179,7 +247,7 @@
               <div class="product-card-footer">
                 <b class="product-card-price">310 ₽/кг</b>
                 <a class="product-card-button link" href="#">
-                  <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1.1667 1.25a.6667.6667 0 0 0 0 1.3333h1.7712l.4675 2.3354a.664.664 0 0 0 .0106.0531l.9674 4.8333.0001.0006a1.8254 1.8254 0 0 0 1.8183 1.4691h5.6207a1.8256 1.8256 0 0 0 1.8185-1.4697l.001-.005.9271-4.8614a.6669.6669 0 0 0-.6549-.7915H4.6107l-.4726-2.3614a.6667.6667 0 0 0-.6537-.5358H1.1667ZM5.691 9.5444l-.8134-4.0639h8.2308l-.7756 4.0669a.4923.4923 0 0 1-.4918.3942v-.0001H6.1962v-.0001l-.0128.0002a.4922.4922 0 0 1-.4922-.3962l-.0002-.001Zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Z"/>
                   </svg>
                   <span class="visually-hidden">Добавить в корзину.</span>
@@ -197,7 +265,7 @@
               <div class="product-card-footer">
                 <b class="product-card-price">340 ₽/кг</b>
                 <a class="product-card-button link" href="#">
-                  <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1.1667 1.25a.6667.6667 0 0 0 0 1.3333h1.7712l.4675 2.3354a.664.664 0 0 0 .0106.0531l.9674 4.8333.0001.0006a1.8254 1.8254 0 0 0 1.8183 1.4691h5.6207a1.8256 1.8256 0 0 0 1.8185-1.4697l.001-.005.9271-4.8614a.6669.6669 0 0 0-.6549-.7915H4.6107l-.4726-2.3614a.6667.6667 0 0 0-.6537-.5358H1.1667ZM5.691 9.5444l-.8134-4.0639h8.2308l-.7756 4.0669a.4923.4923 0 0 1-.4918.3942v-.0001H6.1962v-.0001l-.0128.0002a.4922.4922 0 0 1-.4922-.3962l-.0002-.001Zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Z"/>
                   </svg>
                   <span class="visually-hidden">Добавить в корзину.</span>
@@ -215,7 +283,7 @@
               <div class="product-card-footer">
                 <b class="product-card-price">330 ₽/кг</b>
                 <a class="product-card-button link" href="#">
-                  <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1.1667 1.25a.6667.6667 0 0 0 0 1.3333h1.7712l.4675 2.3354a.664.664 0 0 0 .0106.0531l.9674 4.8333.0001.0006a1.8254 1.8254 0 0 0 1.8183 1.4691h5.6207a1.8256 1.8256 0 0 0 1.8185-1.4697l.001-.005.9271-4.8614a.6669.6669 0 0 0-.6549-.7915H4.6107l-.4726-2.3614a.6667.6667 0 0 0-.6537-.5358H1.1667ZM5.691 9.5444l-.8134-4.0639h8.2308l-.7756 4.0669a.4923.4923 0 0 1-.4918.3942v-.0001H6.1962v-.0001l-.0128.0002a.4922.4922 0 0 1-.4922-.3962l-.0002-.001Zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Z"/>
                   </svg>
                   <span class="visually-hidden">Добавить в корзину.</span>
@@ -233,7 +301,7 @@
               <div class="product-card-footer">
                 <b class="product-card-price">320 ₽/кг</b>
                 <a class="product-card-button link" href="#">
-                  <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1.1667 1.25a.6667.6667 0 0 0 0 1.3333h1.7712l.4675 2.3354a.664.664 0 0 0 .0106.0531l.9674 4.8333.0001.0006a1.8254 1.8254 0 0 0 1.8183 1.4691h5.6207a1.8256 1.8256 0 0 0 1.8185-1.4697l.001-.005.9271-4.8614a.6669.6669 0 0 0-.6549-.7915H4.6107l-.4726-2.3614a.6667.6667 0 0 0-.6537-.5358H1.1667ZM5.691 9.5444l-.8134-4.0639h8.2308l-.7756 4.0669a.4923.4923 0 0 1-.4918.3942v-.0001H6.1962v-.0001l-.0128.0002a.4922.4922 0 0 1-.4922-.3962l-.0002-.001Zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Z"/>
                   </svg>
                   <span class="visually-hidden">Добавить в корзину.</span>
@@ -272,7 +340,7 @@
                 вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</h2>
 
               <form class="newsletter-form form" action="https://echo.htmlacademy.ru/" method="post">
-                <label for="newsletter-email">Email</label>
+                <label class="visually-hidden" for="newsletter-email">Email</label>
                 <input class="field" placeholder="email@example.com" type="email" name="newsletter-email"
                   id="newsletter-email" required>
                 <button class="newsletter-button additional-button button" type="submit">Отправить</button>
@@ -292,17 +360,37 @@
             <p class="delivery-form-description">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить
               заказ.</p>
             <p class="delivery-form-date">
-              <label class="form-label" for="delivery-date">Дата</label>
-              <input type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020" required>
+              <span class="form-label form-label-icon">
+                <label class="form-label" for="delivery-date">Дата</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                    <svg class="tooltip-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16" fill="currentColor">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00027 2.33333C4.87051 2.33333 2.33333 4.87051 2.33333 8.00027C2.33333 11.13 4.87051 13.6672 8.00027 13.6672C11.13 13.6672 13.6672 11.13 13.6672 8.00027C13.6672 4.87051 11.13 2.33333 8.00027 2.33333ZM1 8.00027C1 4.13413 4.13413 1 8.00027 1C11.8664 1 15.0005 4.13413 15.0005 8.00027C15.0005 11.8664 11.8664 15.0005 8.00027 15.0005C4.13413 15.0005 1 11.8664 1 8.00027ZM8.00006 7.33332C8.36825 7.33332 8.66672 7.6318 8.66672 7.99999V10.5334C8.66672 10.9016 8.36825 11.2001 8.00006 11.2001C7.63187 11.2001 7.33339 10.9016 7.33339 10.5334V7.99999C7.33339 7.6318 7.63187 7.33332 8.00006 7.33332ZM8.00006 4.79989C7.63187 4.79989 7.33339 5.09836 7.33339 5.46655C7.33339 5.83474 7.63187 6.13322 8.00006 6.13322H8.00672C8.37491 6.13322 8.67339 5.83474 8.67339 5.46655C8.67339 5.09836 8.37491 4.79989 8.00672 4.79989H8.00006Z"/>
+                    </svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Введите дату доставки</span>
+                </span>
+              </span>
+              <input class="field" type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020" required>
             </p>
             <p class="delivery-form-phone">
               <label class="form-label" for="delivery-form-phone">Телефон</label>
-              <input type="tel" id="delivery-form-phone" name="delivery-form-phone" placeholder="+7 800 999-00-00"
+              <input class="field" type="tel" id="delivery-form-phone" name="delivery-form-phone" placeholder="+7 800 999-00-00"
                 required>
             </p>
             <p class="delivery-form-address">
-              <label class="form-label" for="delivery-address">Адрес</label>
-              <input type="text" id="delivery-address" name="delivery-address"
+              <span class="form-label form-label-icon">
+                <label class="form-label" for="delivery-address">Адрес</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                    <svg class="tooltip-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16" fill="currentColor">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00027 2.33333C4.87051 2.33333 2.33333 4.87051 2.33333 8.00027C2.33333 11.13 4.87051 13.6672 8.00027 13.6672C11.13 13.6672 13.6672 11.13 13.6672 8.00027C13.6672 4.87051 11.13 2.33333 8.00027 2.33333ZM1 8.00027C1 4.13413 4.13413 1 8.00027 1C11.8664 1 15.0005 4.13413 15.0005 8.00027C15.0005 11.8664 11.8664 15.0005 8.00027 15.0005C4.13413 15.0005 1 11.8664 1 8.00027ZM8.00006 7.33332C8.36825 7.33332 8.66672 7.6318 8.66672 7.99999V10.5334C8.66672 10.9016 8.36825 11.2001 8.00006 11.2001C7.63187 11.2001 7.33339 10.9016 7.33339 10.5334V7.99999C7.33339 7.6318 7.63187 7.33332 8.00006 7.33332ZM8.00006 4.79989C7.63187 4.79989 7.33339 5.09836 7.33339 5.46655C7.33339 5.83474 7.63187 6.13322 8.00006 6.13322H8.00672C8.37491 6.13322 8.67339 5.83474 8.67339 5.46655C8.67339 5.09836 8.37491 4.79989 8.00672 4.79989H8.00006Z"/>
+                    </svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Введите название улицы, дома и квартиры</span>
+                </span>
+              </span>
+              <input class="field" type="text" id="delivery-address" name="delivery-address"
                 placeholder="ул. Большая Конюшенная, 19/8" required>
             </p>
             <button class="delivery-form-button additional-button button" type="submit">Отправить</button>
@@ -327,7 +415,7 @@
         <ul class="social-list">
           <li class="social-item">
             <a class="social-link-telegram" href="https://t.me/htmlacademy">
-              <svg width="24" height="24" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <svg width="24" height="24" aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.29 5.9c-.78.33-2.34 1-4.67 2.02-.38.15-.58.3-.6.44-.02.24.28.34.7.47l.17.05c.4.14.96.3 1.24.3.26 0 .55-.1.87-.32a82.12 82.12 0 0 1 3.38-2.23c.05-.01.12-.03.16.01.05.04.04.12.04.14a22.62 22.62 0 0 1-2.2 2.16l-.2.18c-.37.37-.66.64.02 1.1.33.2.6.38.85.56a59.64 59.64 0 0 0 1.2.82c.34.23.64.45 1 .41.22-.02.44-.22.55-.82.27-1.41.79-4.48.9-5.75.02-.1.01-.21 0-.31a.34.34 0 0 0-.12-.22.52.52 0 0 0-.3-.1c-.31.01-.77.17-3 1.1Z"/>
               </svg>
               <span class="visually-hidden">Телеграмм.</span>
@@ -335,7 +423,7 @@
           </li>
           <li class="social-item">
             <a class="social-link-vk" href="https://vk.com/htmlacademy">
-              <svg width="24" height="24" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <svg width="24" height="24" aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.4 9.98H7.9s-1.05.06-1.98-.79c-1.01-.92-1.9-2.76-1.9-2.76s-.06-.12 0-.18.23-.07.23-.07H5.4s.11.01.19.06c.06.04.1.12.1.12s.18.4.43.78c.47.72.7.88.86.8.24-.11.16-1.02.16-1.02s0-.33-.11-.48c-.1-.11-.28-.14-.36-.15-.06-.01.04-.14.18-.2.2-.09.57-.1 1-.09.33 0 .43.02.56.05.3.06.3.27.27.71a9.7 9.7 0 0 0-.01.6c-.01.22-.02.48.15.58.09.05.3 0 .84-.8.25-.37.44-.81.44-.81s.04-.08.11-.12c.07-.03.15-.02.15-.02h1.2s.37-.04.43.1c.06.15-.14.5-.63 1.07-.46.54-.69.75-.67.92.01.13.16.25.44.48a3.4 3.4 0 0 1 .8.8c.26.4-.3.42-.3.42l-1.06.02s-.23.04-.54-.15c-.15-.1-.3-.25-.45-.4-.23-.22-.44-.43-.62-.38-.3.08-.28.65-.28.65s0 .12-.07.18c-.07.07-.22.08-.22.08Z"/>
               </svg>
               <span class="visually-hidden">ВКонтакте.</span>
@@ -343,7 +431,7 @@
           </li>
           <li class="social-item">
             <a class="social-link-youtube" href="https://www.youtube.com/user/htmlacademyru">
-              <svg width="24" height="24" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <svg width="24" height="24" aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9.33583 7.86083L7.46417 6.9875C7.30083 6.91167 7.16667 6.99667 7.16667 7.1775V8.8225C7.16667 9.00333 7.30083 9.08833 7.46417 9.0125L9.335 8.13917C9.49917 8.0625 9.49917 7.9375 9.33583 7.86083ZM8 0C3.58167 0 0 3.58167 0 8C0 12.4183 3.58167 16 8 16C12.4183 16 16 12.4183 16 8C16 3.58167 12.4183 0 8 0ZM8 11.25C3.905 11.25 3.83333 10.8808 3.83333 8C3.83333 5.11917 3.905 4.75 8 4.75C12.095 4.75 12.1667 5.11917 12.1667 8C12.1667 10.8808 12.095 11.25 8 11.25Z"/>
               </svg>
               <span class="visually-hidden">Ютуб.</span>
