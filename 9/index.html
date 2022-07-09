@@ -12,12 +12,11 @@
     <div class="page-container">
       <header class="page-header">
         <img class="header-logo" src="images/content/logo.svg" width="137" height="56" alt="Логотип магазина Глейси.">
-        <nav class="navigation">
+        <nav class="navigation navigation-menu">
           <ul class="navigation-list">
-            <li class="navigation-item">
+            <li class="navigation-item navigation-item-catalog">
               <a class="navigation-link link" href="catalog.html">Каталог</a>
               <div class="popover popover-catalog">
-                <button class="navigation-link navigation-link-current link" type="button">Каталог</button>
                 <div class="popover-content">
                   <h2 class="popover-title">Новинки</h2>
                   <ul class="popover-catalog-list">
@@ -51,20 +50,13 @@
             </li>
             <li class="navigation-item">
               <a class="navigation-link link navigation-link-search button-user" href="#">
-                <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M2.66341 7.33008C2.66341 4.75275 4.75275 2.66341 7.33008 2.66341C9.90741 2.66341 11.9967 4.75275 11.9967 7.33008C11.9967 8.58735 11.4995 9.7285 10.691 10.5676C10.6682 10.5852 10.6462 10.6044 10.6253 10.6253C10.6044 10.6463 10.5852 10.6682 10.5676 10.6911C9.72847 11.4996 8.58734 11.9967 7.33008 11.9967C4.75275 11.9967 2.66341 9.90741 2.66341 7.33008ZM11.0752 12.018C10.0487 12.8391 8.74675 13.3301 7.33008 13.3301C4.01637 13.3301 1.33008 10.6438 1.33008 7.33008C1.33008 4.01637 4.01637 1.33008 7.33008 1.33008C10.6438 1.33008 13.3301 4.01637 13.3301 7.33008C13.3301 8.74676 12.8391 10.0488 12.018 11.0752L14.4681 13.5253C14.7285 13.7857 14.7285 14.2078 14.4681 14.4682C14.2078 14.7285 13.7857 14.7285 13.5253 14.4682L11.0752 12.018Z"/>
-                </svg>
                 <span class="visually-hidden">Поиск.</span>
               </a>
               <div class="popover popover-search">
-                <button class="popover-close-button button-user" type="button">
-                  <svg class="popover-search-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.66341 7.33008C2.66341 4.75275 4.75275 2.66341 7.33008 2.66341C9.90741 2.66341 11.9967 4.75275 11.9967 7.33008C11.9967 8.58735 11.4995 9.7285 10.691 10.5676C10.6682 10.5852 10.6462 10.6044 10.6253 10.6253C10.6044 10.6463 10.5852 10.6682 10.5676 10.6911C9.72847 11.4996 8.58734 11.9967 7.33008 11.9967C4.75275 11.9967 2.66341 9.90741 2.66341 7.33008ZM11.0752 12.018C10.0487 12.8391 8.74675 13.3301 7.33008 13.3301C4.01637 13.3301 1.33008 10.6438 1.33008 7.33008C1.33008 4.01637 4.01637 1.33008 7.33008 1.33008C10.6438 1.33008 13.3301 4.01637 13.3301 7.33008C13.3301 8.74676 12.8391 10.0488 12.018 11.0752L14.4681 13.5253C14.7285 13.7857 14.7285 14.2078 14.4681 14.4682C14.2078 14.7285 13.7857 14.7285 13.5253 14.4682L11.0752 12.018Z"/>
-                  </svg>
+                <button class="popover-close-button popover-close-button-search button-user" type="button">
                   <span class="visually-hidden">Закрыть.</span>
                 </button>
                 <div class="popover-content">
-                  <h2 class="popover-title visually-hidden">Поиск.</h2>
                   <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
                     <label class="visually-hidden" for="search-field">Поле поиска.</label>
                     <input class="search-field field" type="search" id="search-field" name="search-field" placeholder="Поиск по сайту">
@@ -74,18 +66,11 @@
             </li>
             <li class="navigation-item">
               <a class="navigation-link navigation-link-login link button-user" href="#">
-                <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9 1.67c0-.37.3-.67.67-.67h2.66a2 2 0 0 1 2 2v9.33a2 2 0 0 1-2 2H9.67a.67.67 0 1 1 0-1.33h2.66a.67.67 0 0 0 .67-.67V3a.67.67 0 0 0-.67-.67H9.67A.67.67 0 0 1 9 1.67Zm-3.14 2.2a.67.67 0 0 1 .94 0l3.33 3.32a.69.69 0 0 1 .13.18.66.66 0 0 1-.13.77L6.8 11.47a.67.67 0 1 1-.94-.94l2.2-2.2h-6.4a.67.67 0 1 1 0-1.33h6.4l-2.2-2.2a.67.67 0 0 1 0-.94Z"/>
-                </svg>
                 Вход
               </a>
               <div class="popover popover-auth">
-                <button class="popover-close-button button-user" type="button">
-                  <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 1.67c0-.37.3-.67.67-.67h2.66a2 2 0 0 1 2 2v9.33a2 2 0 0 1-2 2H9.67a.67.67 0 1 1 0-1.33h2.66a.67.67 0 0 0 .67-.67V3a.67.67 0 0 0-.67-.67H9.67A.67.67 0 0 1 9 1.67Zm-3.14 2.2a.67.67 0 0 1 .94 0l3.33 3.32a.69.69 0 0 1 .13.18.66.66 0 0 1-.13.77L6.8 11.47a.67.67 0 1 1-.94-.94l2.2-2.2h-6.4a.67.67 0 1 1 0-1.33h6.4l-2.2-2.2a.67.67 0 0 1 0-.94Z"/>
-                  </svg>
+                <button class="popover-close-button popover-close-button-login button-user" type="button">
                   Вход
-                  <span class="visually-hidden">Закрыть.</span>
                 </button>
                 <div class="popover-content">
                   <h2 class="popover-title">Личный кабинет</h2>
@@ -111,19 +96,12 @@
             </li>
             <li class="navigation-item">
               <a class="navigation-link navigation-link-cart link button-user" href="#">
-                <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M1.1667 1.25a.6667.6667 0 0 0 0 1.3333h1.7712l.4675 2.3354a.664.664 0 0 0 .0106.0531l.9674 4.8333.0001.0006a1.8254 1.8254 0 0 0 1.8183 1.4691h5.6207a1.8256 1.8256 0 0 0 1.8185-1.4697l.001-.005.9271-4.8614a.6669.6669 0 0 0-.6549-.7915H4.6107l-.4726-2.3614a.6667.6667 0 0 0-.6537-.5358H1.1667ZM5.691 9.5444l-.8134-4.0639h8.2308l-.7756 4.0669a.4923.4923 0 0 1-.4918.3942v-.0001H6.1962v-.0001l-.0128.0002a.4922.4922 0 0 1-.4922-.3962l-.0002-.001Zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Z"/>
-                </svg>
                 <span class="visually-hidden">Корзина.</span>
                 2 товара
               </a>
               <div class="popover popover-cart">
-                <button class="popover-close-button button-user">
-                  <svg aria-hidden="true" focusable="false" width="16" height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.1667 1.25a.6667.6667 0 0 0 0 1.3333h1.7712l.4675 2.3354a.664.664 0 0 0 .0106.0531l.9674 4.8333.0001.0006a1.8254 1.8254 0 0 0 1.8183 1.4691h5.6207a1.8256 1.8256 0 0 0 1.8185-1.4697l.001-.005.9271-4.8614a.6669.6669 0 0 0-.6549-.7915H4.6107l-.4726-2.3614a.6667.6667 0 0 0-.6537-.5358H1.1667ZM5.691 9.5444l-.8134-4.0639h8.2308l-.7756 4.0669a.4923.4923 0 0 1-.4918.3942v-.0001H6.1962v-.0001l-.0128.0002a.4922.4922 0 0 1-.4922-.3962l-.0002-.001Zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Z"/>
-                  </svg>
+                <button class="popover-close-button popover-close-button-cart button-user" type="button">
                   2 товара
-                  <span class="visually-hidden">Закрыть.</span>
                 </button>
                 <div class="popover-content">
                   <h2 class="popover-title">Корзина</h2>
@@ -188,8 +166,8 @@
                 </button>
               </div>
             </div>
-            <button class="slide-preview-banana slide-preview"></button>
-            <button class="slide-preview-caramel slide-preview"></button>
+            <button class="slide-preview-banana slide-preview" type="button"></button>
+            <button class="slide-preview-caramel slide-preview" type="button"></button>
           </div>
           <div class="ice-cream-slider-item visually-hidden">
             <div class="ice-cream-slider-text">
@@ -215,8 +193,8 @@
                   </svg>
                 </button>
               </div>
-              <button class="slide-preview-caramel slide-preview"></button>
-              <button class="slide-preview-strawberry slide-preview"></button>
+              <button class="slide-preview-caramel slide-preview" type="button"></button>
+              <button class="slide-preview-strawberry slide-preview" type="button"></button>
             </div>
           </div>
           <div class="ice-cream-slider-item visually-hidden">
@@ -243,8 +221,8 @@
                   </svg>
                 </button>
               </div>
-              <button class="slide-preview-strawberry slide-preview"></button>
-              <button class="slide-preview-banana slide-preview"></button>
+              <button class="slide-preview-strawberry slide-preview" type="button"></button>
+              <button class="slide-preview-banana slide-preview" type="button"></button>
             </div>
           </div>
 
@@ -442,12 +420,12 @@
               <span class="form-label form-label-icon">
                 <label class="form-label" for="delivery-date">Дата</label>
                 <span class="tooltip">
-                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
                     <svg class="tooltip-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16" fill="currentColor">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00027 2.33333C4.87051 2.33333 2.33333 4.87051 2.33333 8.00027C2.33333 11.13 4.87051 13.6672 8.00027 13.6672C11.13 13.6672 13.6672 11.13 13.6672 8.00027C13.6672 4.87051 11.13 2.33333 8.00027 2.33333ZM1 8.00027C1 4.13413 4.13413 1 8.00027 1C11.8664 1 15.0005 4.13413 15.0005 8.00027C15.0005 11.8664 11.8664 15.0005 8.00027 15.0005C4.13413 15.0005 1 11.8664 1 8.00027ZM8.00006 7.33332C8.36825 7.33332 8.66672 7.6318 8.66672 7.99999V10.5334C8.66672 10.9016 8.36825 11.2001 8.00006 11.2001C7.63187 11.2001 7.33339 10.9016 7.33339 10.5334V7.99999C7.33339 7.6318 7.63187 7.33332 8.00006 7.33332ZM8.00006 4.79989C7.63187 4.79989 7.33339 5.09836 7.33339 5.46655C7.33339 5.83474 7.63187 6.13322 8.00006 6.13322H8.00672C8.37491 6.13322 8.67339 5.83474 8.67339 5.46655C8.67339 5.09836 8.37491 4.79989 8.00672 4.79989H8.00006Z"/>
                     </svg>
                   </button>
-                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Введите дату доставки</span>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Введите дату доставки</span>
                 </span>
               </span>
               <input class="field" type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020" required>
@@ -460,12 +438,12 @@
               <span class="form-label form-label-icon">
                 <label class="form-label" for="delivery-address">Адрес</label>
                 <span class="tooltip">
-                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-address">
                     <svg class="tooltip-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16" fill="currentColor">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00027 2.33333C4.87051 2.33333 2.33333 4.87051 2.33333 8.00027C2.33333 11.13 4.87051 13.6672 8.00027 13.6672C11.13 13.6672 13.6672 11.13 13.6672 8.00027C13.6672 4.87051 11.13 2.33333 8.00027 2.33333ZM1 8.00027C1 4.13413 4.13413 1 8.00027 1C11.8664 1 15.0005 4.13413 15.0005 8.00027C15.0005 11.8664 11.8664 15.0005 8.00027 15.0005C4.13413 15.0005 1 11.8664 1 8.00027ZM8.00006 7.33332C8.36825 7.33332 8.66672 7.6318 8.66672 7.99999V10.5334C8.66672 10.9016 8.36825 11.2001 8.00006 11.2001C7.63187 11.2001 7.33339 10.9016 7.33339 10.5334V7.99999C7.33339 7.6318 7.63187 7.33332 8.00006 7.33332ZM8.00006 4.79989C7.63187 4.79989 7.33339 5.09836 7.33339 5.46655C7.33339 5.83474 7.63187 6.13322 8.00006 6.13322H8.00672C8.37491 6.13322 8.67339 5.83474 8.67339 5.46655C8.67339 5.09836 8.37491 4.79989 8.00672 4.79989H8.00006Z"/>
                     </svg>
                   </button>
-                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Введите название улицы, дома и квартиры</span>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-address">Введите название улицы, дома и квартиры</span>
                 </span>
               </span>
               <input class="field" type="text" id="delivery-address" name="delivery-address"
@@ -545,7 +523,7 @@
     </div>
     <div class="modal-container modal-container-close">
       <div class="modal modal-feedback">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть.</span>
         </button>
         <section class="modal-content">
