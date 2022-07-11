@@ -212,6 +212,8 @@ body {
   margin: 0 auto;
   padding: 24px 0 48px;
   width: 1170px;
+  padding-left: 98px;
+  padding-right: 98px;
 }
 
 .page-header {
@@ -228,13 +230,11 @@ body {
   display: flex;
   width: 1017px;
   justify-content: space-between;
-  align-items: center;
 }
 
 .navigation-list {
   margin: 0;
   padding: 0;
-  max-width: 535px;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
@@ -250,9 +250,8 @@ body {
 
 .navigation-item {
   position: relative;
-  height: 56px;
+  height: 100%;
   display: flex;
-  align-items: center;
 }
 
 .navigation-link {
@@ -260,6 +259,11 @@ body {
   text-align: center;
   border-radius: 30px;
   padding: 8px 16px;
+  align-self: center;
+}
+
+.navigation-user li {
+  margin-bottom: 8px;
 }
 
 .navigation-user .navigation-link {
@@ -326,6 +330,7 @@ body {
 .navigation-user .navigation-link-login,
 .navigation-user .navigation-link-cart {
   padding: 0 16px;
+  padding-left: 13px;
 }
 
 .navigation-link-search::before,
@@ -333,14 +338,14 @@ body {
 .navigation-link-cart::before {
   content: "";
   display: block;
-  width: 16px;
+  width: 22px;
   height: 16px;
   margin: 0 auto;
 }
 
 .navigation-link-login::before,
 .navigation-link-cart::before {
-  margin-right: 6px;
+  margin-right: 3px;
 }
 
 .navigation-link-search::before {
@@ -368,11 +373,12 @@ body {
 
 .ice-cream-slider-item {
   display: flex;
+  align-items: center;
 }
 
 .ice-cream-slider-text {
   width: 445px;
-  padding: 115px 62px 0 70px;
+  padding: 46px 62px 0 70px;
 }
 
 .ice-cream-name {
@@ -567,6 +573,7 @@ body {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  min-width: 104px;
 }
 
 .social-item a {
@@ -708,7 +715,8 @@ body {
 }
 
 .gift-button {
-  align-self: flex-start;
+  margin-top: auto;
+  margin-right: auto;
 }
 
 .popular-ice-cream-list {
@@ -775,6 +783,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: auto;
 }
 
 .product-card-price {
@@ -786,7 +795,7 @@ body {
   position: relative;
   background: #FF2F64;
   border-radius: 50%;
-  width: 32px;
+  min-width: 32px;
   height: 32px;
   color: #FCFCFC;
 }
@@ -902,7 +911,7 @@ body {
 }
 
 .news-banner {
-  background: url("../images/decorative/news-background.jpg") no-repeat left center/113% 200%;
+  background: url("../images/decorative/news-background.jpg") no-repeat left center/113% ;
   border-radius: 16px;
   width: 303px;
   min-height: 158px;
@@ -934,6 +943,7 @@ body {
   border-radius: 16px;
   width: 570px;
   box-sizing: border-box;
+  display: flex;
 }
 
 .newsletter-inner {
@@ -942,6 +952,7 @@ body {
   padding: 26px;
   min-height: 212px;
   box-sizing: border-box;
+  width: 100%;
 }
 
 .newsletter-title {
@@ -961,7 +972,7 @@ body {
 
 .newsletter-form input {
   margin-right: 19px;
-  width: 100%;
+  width: 332px;
 }
 
 .field {
@@ -1111,6 +1122,7 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
+  align-self: flex-end;
 }
 
 .delivery-form-description {
@@ -1286,7 +1298,7 @@ body {
   align-items: flex-start;
   margin: 0 auto 0;
   padding: 0;
-  padding-left: 99px;
+  padding-left: 109px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto auto;
@@ -1318,6 +1330,7 @@ body {
 .copyright {
   width: 193px;
   margin-right: 14px;
+  margin-left: 10px;
 }
 
 .copyright-text {
@@ -2137,7 +2150,7 @@ input[type="search"]::-webkit-search-cancel-button {
   content: "";
   width: 103px;
   height: 1px;
-  top: 36px;
+  bottom: -9px;
   left: 0;
   background: #B9B9B9;
   margin: 4px 16px;
