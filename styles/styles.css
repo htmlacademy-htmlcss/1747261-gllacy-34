@@ -755,11 +755,6 @@ body {
   text-align: center;
 }
 
-.product-card-link:hover  {
-  -webkit-transform: scale(0.99);
-          transform: scale(0.99);
-}
-
 .product-card-title {
   font-size: 20px;
   line-height: 24px;
@@ -1338,11 +1333,6 @@ body {
   margin-bottom: 8px;
 }
 
-.htmlacademy-logo:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-
 .htmlacademy-link {
   text-decoration: underline;
   text-underline-offset: 2px;
@@ -1841,12 +1831,6 @@ body {
 
 .pagination-link:hover:not(.pagination-next,.pagination-prev) {
   background: rgba(252, 252, 252, 0.5);
-}
-
-.pagination-next:hover,
-.pagination-prev:hover  {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
 }
 
 .pagination-link:focus {
